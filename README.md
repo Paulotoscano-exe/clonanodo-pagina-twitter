@@ -8,7 +8,7 @@ Desafio de programação do evento da Kenzie Academy Brasil.
 - CSS3
 - Javascript
 
-##Resultado
+## Resultado
 
 ![](https://github.com/Paulotoscano-exe/clonanodo-pagina-twitter/blob/main/imagens/img-projeto/imagem1.png)
 ![](https://github.com/Paulotoscano-exe/clonanodo-pagina-twitter/blob/main/imagens/img-projeto/imagem2.png)
