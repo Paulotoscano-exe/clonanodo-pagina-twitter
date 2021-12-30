@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --interacaoMenu: rgba(128, 128, 128, 0.233);
+    --azulTwitter: #1da1f2;
+    --corTweetConteudoSpan: #828282;
+    --corTweerConteudoP: #333333;
+    --fontPadrao: 'Roboto', sans-serif;
+}
+
+* {
+    list-style: none;
+}
+
+body{
+    font-family: var(--fontPadrao);
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.cabecalho {
+    flex-basis: 30%;
+}
+
+#cabecalho__logo {
+    margin: 30px auto 5px 15px;
+}
+
+.cabecalho__logo > figure {}
+
+.cabecalho__menuNavegacao {}
+
+.cabecalho__menuLista {
+    margin: 0px;
+    padding: 25px 0px;
+}
+
+.cabecalho__menuLista > li:hover {
+    display: inline-block;
+    padding: 12px 27px 12px 18px;
+    border-radius: 30px;
+    background-color: var(--interacaoMenu) ;
+    transition-duration: 0.2s;
+}
+
+.cabecalho__menuItem {
+    margin: 0px;
+    padding: 12px 27px 12px 18px;
+}
+
+.cabecalho__menuItem > img {
+    max-width: 25px;
+    padding-right: 12px;
+}
+
+.cabecalho__menuItem > a {
+    color: black;
+    text-decoration: none;
+    font: normal bold 20px var(--fontPadrao);
+    
+}
+
+.conteudoPrincipal {
+    flex-basis: 70%;
+    border-left: 1px solid #e7ecf0;
+    border-right: 1px solid #e7ecf0;
+}
+
+.conteudoPrincipal__titulo {
+    padding: 30px 30px 10px;
+    margin-bottom: 0px;
+}
+
+.conteudoPrincipal__formulario {
+    padding: 10px 30px;
+    border-top: 1px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0;
+    text-align: right;
+}
+
+.conteudoPrincipal__formulario > textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 55px;
+    padding: 8px 0px 8px;
+    font-size: 16px;
+    
+}
+
+.conteudoPrincipal__formulario > button {
+    background-color: var(--azulTwitter);
+    color: white;
+    padding: 12px 27px;
+    border: none;
+    border-radius:30px;
+    font: normal bold 14px var(--fontPadrao);
+}
+
+.conteudoPrincipal__feed {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudoPrincipal__listaTweets {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
+
+.conteudoPrincipal__tweet {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 2px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.tweet__fotoPerfil {
+    margin-bottom: 30px;
+}
+
+.tweet__conteudo {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.tweet__conteudo > h4 {
+    display: inline-block;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.tweet__conteudo > span {
+    display: inline-block;
+    margin: 0px;
+    color:  var(--corTweetConteudoSpan);
+}
+
+.tweet__conteudo > p {
+    padding: 13px 13px 13px 0px;
+    margin: 0px;
+    color: var(--corTweerConteudoP);
+}
